@@ -1,0 +1,17 @@
+<AppWidget>:
+    orientation: 'vertical'
+    Button:
+        text: 'Click Me'
+        on_press: root.do_action()
+    Label:
+        id: id_mouse_pos
+        text: 'Some very long line which will be cut'
+        markup: True
+        shorten: True
+    BoxLayout:
+        id: cerc1
+        canvas:
+            Color:
+                rgb: 1, 0.5, 1
+            Line:
+                circle: self.circle
