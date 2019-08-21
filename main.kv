@@ -1,8 +1,5 @@
 <AppWidget>:
     orientation: 'vertical'
-    Button:
-        text: 'Click Me'
-        on_press: root.do_action()
     Label:
         id: id_mouse_pos
         text: 'Some very long line which will be cut'
@@ -14,4 +11,8 @@
             Color:
                 rgb: 1, 0.5, 1
             Line:
-                circle: self.circle
+                circle: 300, 300, 100
+            Color:
+                rgb: 1, 0.5, 1
+            Line:
+                circle: 300, 300, 20
